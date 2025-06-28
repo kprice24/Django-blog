@@ -1,1 +1,0 @@
-# optional blog views
