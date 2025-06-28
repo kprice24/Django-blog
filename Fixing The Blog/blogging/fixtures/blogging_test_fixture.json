@@ -1,0 +1,11 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "fixtureuser",
+      "password": "pbkdf2_sha256$320000$dummy$hash",
+      "is_active": true
+    }
+  }
+]
