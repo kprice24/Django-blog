@@ -1,8 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from polling.models import Poll
 def list_view(request):
-    ctx = { 'polls': Poll.objects.all() }
-    return render(request, 'polling/list.html', ctx)
+    return render(request, 'polling/list.html', {'polls': Poll.objects.all()})
 def detail_view(request, poll_id):
     poll = get_object_or_404(Poll, pk=poll_id)
     if request.method == 'POST':
