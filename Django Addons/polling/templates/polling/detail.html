@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>{{poll.title}}</h1><p>{{poll.text}}</p><p>Score: {{poll.score}}</p><form method='post'>{% csrf_token %}<button name='vote' value='Yes'>Yes</button><button name='vote' value='No'>No</button></form>{% endblock %}
